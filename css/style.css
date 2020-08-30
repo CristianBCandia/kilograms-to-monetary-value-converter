@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    background: rgb(7, 5, 3);
+    /* background-image: -moz-linear-gradient((rgb(247, 247, 247), #aaa));
+    background-image: -webkit-linear-gradient((rgb(247, 247, 247), #aaa)); */
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+[conteiner]{
+    display: flex;
+    height: 600px;
+}
+
+.tela-esquerda {
+    width: 50vw;
+}
+
+.tela-direita {
+
+    width: 50vw;
+    border-left: 1px solid white;
+}
+
+.area-calculadora {
+
+    display: flex;
+    align-items: center;
+    height: 30vh;
+
+}
+
+input {
+
+    height: 30%;
+    width: 50%;
+    margin-left: 10px;
+    font-size: 1em;
+    padding: 5px 20px;
+    background-color: rgba(92, 26, 26, 0.705);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    outline: 0;
+}
+
+
+
+button {
+    margin-left: 10px;
+    width: 20%;
+    height: 30%;
+    border-radius: 100px;
+    font-size: 1.2rem;
+    color: white;
+    outline: 0;
+    border: none;
+}
+
+
+.area-produtos {
+
+    display: flex;
+    align-items: center;
+    height: 30vh;
+}
+
+label{
+    vertical-align: middle;
+}
+
+[tomate]{
+
+    background-color: tomato;
+
+}
+
+
+[cebola]{
+
+    background-color: rgb(177, 174, 129);
+
+}
+
+[laranja]{
+
+    background-color: orange;
+
+}
+
+
+.alterar-produto {
+
+    display: flex;
+    align-items: center;
+    height: 30vh;
+
+}
+
+.nota {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+.total-verde {
+
+    color: rgb(133, 209, 133);
+}
