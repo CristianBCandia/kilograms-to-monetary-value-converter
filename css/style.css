@@ -22,11 +22,17 @@ body {
 [conteiner]{
     display: flex;
     height: 600px;
+    
 }
 
 .tela-esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50vw;
 }
+
+
 
 .tela-direita {
 
@@ -38,8 +44,20 @@ body {
 
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 30vh;
+    width: 50vw;
+    flex-wrap: wrap;
 
+}
+
+.area-calculadora::after {
+
+    content: '';
+    width: 45vw;
+    height: 1px;
+    background: white;
+    display: block;
 }
 
 input {
@@ -74,11 +92,19 @@ button {
 
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     height: 30vh;
+    width: 50vw;
 }
 
-label{
-    vertical-align: middle;
+.area-produtos::after {
+
+    content: '';
+    width: 45vw;
+    height: 1px;
+    background: white;
+    display: block;
 }
 
 [tomate]{
@@ -100,13 +126,39 @@ label{
 
 }
 
+[batata]{
+    background-color: rgb(150, 118, 59);
+}
+
+[cenoura]{
+    background-color: rgb(228, 123, 3);
+}
+
+[limao]{
+    background-color: rgb(26, 207, 35);
+}
+
+[aipim]{
+
+    background-color: rgb(85, 64, 24);
+}
+
+[novo]{
+    background-color: rgb(22, 21, 18);
+    box-shadow: 0 0 10px rgb(68, 19, 19)
+}
+
+[novo]:active {
+    box-shadow: 0 0 10px red;
+}
 
 .alterar-produto {
 
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 30vh;
-
+    width: 50vw;
 }
 
 .nota {
@@ -114,11 +166,18 @@ label{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 65vh;
     align-items: center;
 }
 
-.total-verde {
+[verde] {
 
     color: rgb(133, 209, 133);
+    font-size: 3rem;
+}
+
+[txtPrecoQuilo] {
+
+    font-size: 2.2rem;
+
 }

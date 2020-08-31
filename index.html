@@ -14,25 +14,32 @@
 
     <div class="tela-esquerda">
 
+        <label class="peso" id="lbl-peso">Peso em gramas</label>
         <div class="area-calculadora">
     
-           <label class="peso" id="lbl-peso">Peso em gramas</label>
-           <input type="text" id="peso" onfocus="reset()">
+            <input type="text" name="peso" id="peso" maxlength="8" onfocus="reset()"/>
     
         </div>
+        <label>Produto</label>
         <div class="area-produtos">
 
-            <label>Produto</label>
 
             <button class="produto" id="tomate" tomate produto onclick="analiseDeAcao('tomate')">Tomate</button>
             <button id="cebola" cebola produto onclick="analiseDeAcao('cebola')">Cebola</button>
             <button id="laranja" laranja produto onclick="analiseDeAcao('laranja')">Laranja</button>
-    
+            <button id="batata" batata produto onclick="analiseDeAcao('batata')">Batata</button>
+            <button id="cenoura" cenoura produto onclick="analiseDeAcao('cenoura')">Cenoura</button>
+            <button id="limao" limao produto onclick="analiseDeAcao('limao')">Limão</button>
+            <button id="aipim" aipim produto onclick="analiseDeAcao('aipim')">Aipim</button>
+            <button id="produto-novo" novo produto onclick="analiseDeAcao('produto')">Produto</button>
+        
+
         </div>
+
+        <label class="novo-valor">Novo valor</label>        
         <div class="alterar-produto">
     
-            <label class="novo-valor">Novo valor </label>        
-            <input type="text" id="novo-valor" onfocus="reset()">
+            <input type="text" id="novo-valor" onKeyUp="mascaraMoeda(this, event)" onfocus="reset()">
     
         </div>
     </div>
@@ -47,12 +54,13 @@
             <div class="quantidade" id="txt-quantidade">
 
             </div>
-            <div class="valor-total" id="valor-total">
+            <div class="valor-total" id="valor-total" verde>
 
             </div>
         </div>
     </div>
 </div>
+<script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
